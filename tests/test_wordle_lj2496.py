@@ -1,0 +1,1 @@
+from wordle_lj2496 import wordle_lj2496
