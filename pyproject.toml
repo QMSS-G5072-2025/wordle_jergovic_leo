@@ -1,10 +1,11 @@
 [tool.poetry]
 name = "wordle_lj2496"
-version = "0.1.0"
+version = "0.1.1"
 description = "A package implementing wordle functions"
 authors = ["Leo Jergovic"]
 license = "MIT"
 readme = "README.md"
+packages = [{include = "wordle_lj2496", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
@@ -19,5 +20,7 @@ dev = [
     "mypy (>=1.18.2,<2.0.0)",
     "myst-nb (>=1.3.0,<2.0.0)",
     "sphinx-autoapi (>=3.6.1,<4.0.0)",
-    "sphinx-rtd-theme (>=3.0.2,<4.0.0)"
+    "sphinx-rtd-theme (>=3.0.2,<4.0.0)",
+    "pytest (>=8.4.2,<9.0.0)",
+    "pytest-cov (>=7.0.0,<8.0.0)",
 ]
